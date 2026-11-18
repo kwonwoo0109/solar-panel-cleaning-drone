@@ -1,0 +1,9 @@
+test,parameter,original_value,test_value,recording_seconds,msl_first_m,msl_last_m,msl_net_change_m,msl_range_60s_m,rolling_range_30s_max_m,rise_30s_max_m,fall_30s_max_m,abs_slope_10s_max_mps,v_acc_min_m,v_acc_median_m,v_acc_max_m,vdop_min,vdop_median,vdop_max,satellites_min,satellites_median,satellites_max,fix_type_transitions,gps_glitch,local_z_range_m,lidar_range_m,result,notes
+test_1_baseline,none,,,60.371,39.313,24.650,-14.663,16.250,14.373,1.651,14.373,0.908,0.439,0.580,1.229,1.32,1.38,1.77,11,13,14,0,true,0.252,0.010,fail,"fix_type=4 throughout; armed=false; ON_GROUND; raw MSL severely unstable"
+test_2_after_wipe,GPS_CFG_WIPE,0,1_to_0,60.300,39.467,31.045,-8.422,8.471,5.168,0.179,5.168,0.236,0.660,0.678,0.690,1.04,1.11,1.20,20,23,24,0,false,0.291,0.010,fail,"improved versus test 1 but far above 0.5 m target; fix_type=3 throughout; armed=false; ON_GROUND"
+test_3_rate_b1,GPS_UBX_RATE,,5,60,,,,,,,,,,,,,,,,,,,,,,,unsupported,parameter_not_available
+test_4_satellite_info,GPS_SAT_INFO,0,1,,,,,,,,,,,,,,,,,,,,,,,,collected,"MAVLink GPS_STATUS id 25 available; 40 visible, first 20 reported; parameter restored to 0"
+test_5_min_elevation_b,GPS_UBX_MIN_ELEV,,10,60,,,,,,,,,,,,,,,,,,,,,,,unsupported,parameter_not_available
+test_6_min_cno_b,GPS_UBX_MIN_CNO,,,60,,,,,,,,,,,,,,,,,,,,,,,unsupported,parameter_not_available
+test_7_sbas_b,GPS_1_GNSS,0,,60,,,,,,,,,,,,,,,,,,,,,,,data_unavailable,"40 satellites visible but MAVLink GPS_STATUS exposes only 20 details; full active constellation set not confirmed; no parameter change"
+test_8_final_restore,restore,,,,,,,,,,,,,,,,,,,,,,,,,,complete,"GPS_CFG_WIPE=0; GPS_SAT_INFO=0; GPS_1_GNSS=0; DYNMODEL=7; EKF GPS/baro/range settings restored; Disarm ON_GROUND"

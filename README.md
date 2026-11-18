@@ -14,6 +14,8 @@ L.E.O.N.A.는 배치가 일정하지 않은 태양광 패널을 찾아 지도를
 
 [시험 조건과 상세 결과](#시험-기록과-설계-판단)
 
+[제작설계서·보고서·시험자료](docs/README.md) · [제작·시험 사진](assets/photos/README.md)
+
 ![여러 태양광 패널 모형을 배치한 야외 시험장과 DA-DAKA 기체](assets/field-test-wide.jpg)
 
 *태양광 패널 모형을 배치한 야외 통합 시험. DA-DAKA 종합설계 최종보고서.*
@@ -116,14 +118,22 @@ flowchart LR
 
 *최종보고서의 급수 구성을 바탕으로 정리한 분사부 계통도.*
 
-<details>
-<summary>참고한 팀 자료</summary>
+## 제작·시험 사진
 
-- 항공드론 종합설계 경진대회 최종보고서와 최종 발표자료 · 기체 구조, 임무 및 평가 수치
-- 2026 한이음 드림업 제작설계서 및 개발보고서 고화질 최종본 v2 · 초기 설계와 최종 통합 시험
-- M10 GPS 원시 MSL 현장시험 기록 및 결과 CSV · 정지 기체의 고도값 비교
-- Pi 현장 캘리브레이션 기록과 Edge GPU 연결 검증 기록 · 거리 제어와 추론 통신 시험
-- DRV8876 구동 회로 인계 문서 및 습식 시험 기록 · 밸브 구동 문제와 확인 절차
-- AI 데이터 파이프라인과 Dirt V3 후보 평가 기록 · 학습·평가 분리와 패널 영역 이미지 77개 평가
+| 조립 기체 상면 | 기체 하부의 물 분사 모듈 |
+| --- | --- |
+| [![프로펠러와 전장 배치가 보이는 기체 상면](assets/photos/prototype-overhead.png)](assets/photos/prototype-overhead.png) | [![기체 하부 분사 모듈 내부와 배관 연결부](assets/photos/spray-module-interior.jpg)](assets/photos/spray-module-interior.jpg) |
 
-</details>
+지상 급수 벤치, 야외 시험 장면, 오염 인식 화면은 [제작·시험 사진 모음](assets/photos/README.md)에서 볼 수 있습니다.
+
+## 첨부 자료
+
+| 자료 | 파일 |
+| --- | --- |
+| 한이음 제작설계서 | [PPTX](docs/haniium-design-specification.pptx) |
+| 한이음 개발보고서 최종본 v2 | [PDF](docs/haniium-development-report-v2.pdf) |
+| 종합설계경진대회 최종보고서 본문 | [PDF](docs/aircraft-drone-final-report.pdf) |
+| 종합설계경진대회 최종 발표자료 | [PPTX](docs/competition-presentation.pptx) |
+| GPS 고도 현장시험 결과 | [CSV](docs/tests/gps-altitude-field-test-results.csv) |
+
+수행계획서, 기체 설계 작성본, 포스터와 나머지 시험 기록은 [전체 첨부 자료](docs/README.md)에 모았습니다.
