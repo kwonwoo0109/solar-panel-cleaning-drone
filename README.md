@@ -14,7 +14,7 @@ L.E.O.N.A.는 배치가 일정하지 않은 태양광 패널을 찾아 지도를
 
 [시험 조건과 상세 결과](#시험-기록과-설계-판단)
 
-[제작설계서·보고서·시험자료](docs/README.md) · [제작·시험 사진](assets/photos/README.md)
+[제작설계서·보고서·시험자료](docs/README.md) · [제작·시험 사진](assets/photos/README.md) · [드론 영상](assets/videos/drone-video.mp4)
 
 ![여러 태양광 패널 모형을 배치한 야외 시험장과 DA-DAKA 기체](assets/field-test-wide.jpg)
 
